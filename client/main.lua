@@ -13,7 +13,9 @@ end
 
 function GetFontId(fontName)
     return Fonts[fontName] or 0 
-end exports("GetFontId", GetFontId)
+end 
+
+exports("GetFontId", GetFontId)
 
 CreateThread(function()
     LoadCustomFonts()
