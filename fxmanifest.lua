@@ -11,5 +11,5 @@ client_scripts {
 }
 
 files {
-    'stream/*.gfx' -- โหลดไฟล์ gfx ทั้งหมดในโฟลเดอร์ stream
+    'stream/*.gfx'
 }
