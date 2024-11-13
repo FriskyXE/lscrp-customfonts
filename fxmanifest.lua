@@ -1,7 +1,7 @@
 fx_version 'cerulean'
 game 'gta5'
 
-author 'BLK Team'
+author 'Frisky'
 description 'Custom font loader for FiveM'
 version '1.0.0'
 
