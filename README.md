@@ -17,3 +17,21 @@ This resource allows you to load custom fonts in your FiveM server using `.gfx` 
 
    ```bash
    ensure lscrp-customfonts
+
+## Usage
+
+You can use the `GetFontId` export function to retrieve the fontId for your custom fonts in other client-side scripts.
+
+**Example Usage**
+   ```bash
+   -- Get the fontId for a custom font
+   local fontId = exports['lscrp-customfonts']:GetFontId('MyCustomFont')
+   
+   -- Use the fontId to draw text
+   SetTextFont(fontId)
+   SetTextScale(1.0, 1.0)
+   SetTextColour(255, 255, 255, 255)
+   SetTextOutline()
+   BeginTextCommandDisplayText("STRING")
+   AddTextComponentSubstringPlayerName("Hello with Custom Font!")
+   EndTextCommandDisplayText(0.5, 0.5)
